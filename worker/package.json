@@ -1,0 +1,18 @@
+{
+  "name": "rtapi-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha test/**/*.spec.js"
+  },
+  "author": "Carmine Ingaldi",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "express": "^4.17.1",
+    "node-redis": "^0.1.7",
+    "redis": "^3.0.2"
+  }
+}

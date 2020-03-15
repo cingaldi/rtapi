@@ -1,0 +1,23 @@
+{
+  "name": "rtapi-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha test/**/*.spec.js"
+  },
+  "author": "Carmine Ingaldi",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "axios": "^0.19.2",
+    "eventemitter3": "^4.0.0",
+    "express": "^4.17.1",
+    "graphql": "^14.6.0",
+    "redis": "^3.0.2",
+    "socket.io": "^2.3.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "uuid": "^7.0.2"
+  }
+}

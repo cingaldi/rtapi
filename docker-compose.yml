@@ -1,0 +1,25 @@
+version: "3"
+services: 
+  # rtapi-server:
+  #   build: ./server
+  #   container_name: rtapi-server
+  #   ports:
+  #     - 80:80  
+  #     - 4000:4000
+  # rtapi-worker:
+  #   build: ./worker
+  #   container_name: rtapi-worker
+  #   ports:
+  #     - 3000:3000
+  broker:
+    build: ./broker
+    container_name: rabbitmq
+    ports:
+      - "1883:1883"
+      - "5672:5672"
+      - "15672:15672"
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - 6379:6379
